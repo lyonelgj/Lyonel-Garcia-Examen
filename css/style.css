@@ -1,0 +1,106 @@
+:root{
+ --Rojo: hsl(0, 78%, 62%);
+ --Cyan: hsl(180, 62%, 55%);
+ --Naranja: hsl(34, 97%, 64%);
+ --Azul: hsl(212, 86%, 64%);
+ --AzulOscuro: hsl(234, 12%, 34%);
+ --Gris: hsl(229, 6%, 66%);
+ --GrisSuave: hsl(0, 0%, 98%);
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: black;
+    font-weight: 200;
+    font-size: 1,5rem;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+h2{
+    color:var(--AzulOscuro);
+    margin: 0rem;
+    font-size: 2rem;
+}
+p{
+    color: var(--Gris);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contenedor{
+    /*justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 18rem;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 18rem;
+}
+.supervisor{
+    box-shadow: 10px 5px 10px 5px var(--Gris);
+    padding: 2rem 1rem;
+    width: 30rem;
+    height: 13rem;
+    border-radius: 10px;
+    border-top: 5px solid var(--Cyan);
+    margin-top: 2rem;
+}
+.supervisor h2 p{
+    padding: 2rem;
+}
+.team{
+    box-shadow: 10px 5px 10px 5px var(--Gris);
+    padding: 2rem 1rem;
+    width: 30rem;
+    height: 13rem;
+    border-radius: 10px;
+    border-top: 5px solid var(--Rojo);
+    margin-top: 2rem;
+}
+
+.karma{
+    box-shadow: 10px 5px 10px 5px var(--Gris);
+    padding: 2rem 1rem;
+    width: 30rem;
+    height: 13rem;
+    border-radius: 10px;
+    border-top: 5px solid var(--Naranja);
+    margin-top: 2rem;
+}
+
+.calculator{
+    box-shadow: 10px 5px 10px 5px var(--Gris);
+    padding: 2rem 1rem;
+    width: 30rem;
+    height: 13rem;
+    border-radius: 10px;
+    border-top: 5px solid var(--Azul);
+    margin-top: 2rem;
+}
+
+.icons{
+   padding: 0 22rem;
+   margin-top: 2rem;
+}
+@media (min-width: 768px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    .contenedor{
+        /*display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 18rem;*/
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+ }
